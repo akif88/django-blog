@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap-theme.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/static/images/favicon.png">
+  <!-- Javascript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="/static/js/jquery.js"></script>
+  <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div id="loader_body">
+  <div class="loader-spinner">
+  </div>
+</div>
+
+<!-- Index Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- main_container -->
+<div id="main_container" class="main_container">
+  <div class="container">
+    <!-- Start Wrapper -->
+    <div class="wrapper">
+      <!-- mobile_menu -->
+      <nav class="st-menu mobile_menu" id="menu-1">
+        <div class="inner_mobile_menu">
+          <a class="logo" href="#"><img src="/static/images/logo.png" alt="logo"></a>
+          <!-- mobile_primary_nav -->
+          <div id="mobile_primary_nav">
+
+
+
+
+            <ul class="mobile_primary_nav">
+
+              {% for m in menu %}
+                <li class="has-sub"><a href=" {{ m.url }} ">{{ m.title }}</a>
+
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <!-- // mobile_primary_nav -->
+
+          <!-- social_and_search -->
+          <div class="mobile_social_and_search">
+            <!-- social_icon -->
+            <div class="mobile_social_icon">
+              <span><a href="#"><i class="fa fa-facebook"></i></a></span>
+              <span><a href="#"><i class="fa fa-twitter"></i></a></span>
+              <span><a href="#"><i class="fa fa-google-plus"></i></a></span>
+              <span><a href="#"><i class="fa fa-youtube"></i></a></span>
+              <span><a href="#"><i class="fa fa-dribbble"></i></a></span>
+              <span><a href="#"><i class="fa fa-behance"></i></a></span>
+              <span><a href="#"><i class="fa fa-instagram"></i></a></span>
+              <span><a href="#"><i class="fa fa-vimeo-square"></i></a></span>
+              <span><a href="#"><i class="fa fa-linkedin"></i></a></span>
+            </div>
+            <!-- // social_icon -->
+          </div>
+          <!-- // social_and_search -->
+        </div>
+      </nav>
+      <!-- // mobile_menu -->
+
+      <!-- st-pusher -->
+      <div class="st-pusher">
+        <!-- site_header -->
+        <header class="site_header">
+          <!-- logo_header -->
+          <div class="logo_header">
+            <a class="logo" href="index.html"><img src="/static/images/logo.png" alt="logo"></a>
+          </div>
+          <!-- // logo_header -->
+
+          <!-- nav_one -->
+          <div class="nav_one">
+            <!-- main_navigation -->
+            <div class="main_navigation">
+              <!-- normal_menu -->
+              <div class="normal_menu">
+                <ul class="primary_nav">
+
+
+                    <li class="has-sub"><a href='/blogs/index'>Home</a></li>
+                      <li class="has-sub"><a href='/blogs/#'>About Me</a></li>
+                      <li class="has-sub"><a href='/blogs/#'>Contact</a></li>
+
+
+
+                </ul>
+              </div>
+              <!-- // normal_menu -->
+            </div>
+            <!-- // main_navigation -->
+
+            <!-- Start top_search -->
+            <div class="top_search">
+              <span><i class="fa fa-search search-desktop"></i></span>
+              <form method="get"><input type="text" placeholder="Search and hit enter..."></form>
+            </div>
+            <!-- End top_search -->
+
+            <!-- social_icon -->
+            <div class="social_icon">
+              <span><a href="#"><i class="fa fa-facebook"></i></a></span>
+              <span><a href="#"><i class="fa fa-twitter"></i></a></span>
+              <span><a href="#"><i class="fa fa-google-plus"></i></a></span>
+              <span><a href="#"><i class="fa fa-youtube"></i></a></span>
+              <span><a href="#"><i class="fa fa-dribbble"></i></a></span>
+              <!-- <span><a href="#"><i class="fa fa-behance"></i></a></span> -->
+              <!-- <span><a href="#"><i class="fa fa-instagram"></i></a></span> -->
+              <!-- <span><a href="#"><i class="fa fa-vimeo-square"></i></a></span> -->
+              <span><a href="#"><i class="fa fa-linkedin"></i></a></span>
+            </div>
+            <!-- // social_icon -->
+          </div>
+          <!-- // nav_one -->
+
+          <!-- mobile_menu_button -->
+          <div class="mobile_menu_button">
+
+            <div id="st-trigger-effects" class="column">
+              <button data-effect="mobile_menu"><i class="fa fa-bars"></i></button>
+            </div>
+
+            <!-- Start top_search -->
+            <div class="top_search">
+              <span><i class="fa fa-search search-desktop"></i></span>
+              <form method="get"><input type="text" placeholder="Search and hit enter..."></form>
+            </div>
+            <!-- End top_search -->
+
+          </div>
+          <!-- // mobile_menu_button -->
+        </header>
+        <!-- // site_header -->
+
+
+{% block page_content %}
+
+    <h1>{{ content.title }}</h1>
+    <p>{{ content.content|safe }}</p>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+        <!-- site_footer -->
+        <footer class="site_footer">
+          <div class="inner_site_footer">
+
+            <div class="widget_site_footer container">
+              <div class="row">
+
+
+                <!-- Start widget tag cloud -->
+                <div class="widget  widget_tag_cloud col-sm-4">
+                  <h4 class="widget_title">Tags</h4>
+                  <div class="tagcloud">
+
+                   {% for t in tag%}
+                        <a href="#">{{ t.title }}</a>
+                    {% endfor %}
+
+                  </div>
+                </div>
+                <!-- End widget tag cloud -->
+
+
+
+
+              </div>
+            </div>
+
+
+            <div class="copyright">
+              <div class="hmztop">Scroll To Top</div><!-- Back top -->
+              <p>Copyrights © 2015 All Rights Reserved by <a href="#">ashmawi</a></p>
+            </div>
+
+          </div>
+        </footer>
+        <!-- // site_footer -->
+      </div>
+      <!-- // st-pusher -->
+    </div>
+    <!-- End Wrapper -->
+  </div>
+</div>
+<!-- // main_container -->
+<!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- Javascript
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="/static/js/modernizr.min.js"></script>
+  <script type="text/javascript" src="/static/js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="/static/js/bxslider.min.js"></script>
+  <script type="text/javascript" src="/static/js/isotope.js"></script>
+  <script type="text/javascript" src="/static/js/switch.js"></script>
+	<script type="text/javascript" src="/static/js/sami.js"></script>
+  <script type="text/javascript" src="/static/js/sidebarEffects.js"></script>
+</body>
+</html>

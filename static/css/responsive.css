@@ -1,0 +1,139 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+	/*==========  Mobile First Method  ==========*/
+
+	/* Custom, iPhone Retina */ 
+	@media only screen and (min-width : 320px) {
+
+	}
+
+	/* Extra Small Devices, Phones */ 
+	@media only screen and (min-width : 480px) {
+
+	}
+
+	/* Small Devices, Tablets */
+	@media only screen and (min-width : 768px) {
+
+	}
+
+	/* Medium Devices, Desktops */
+	@media only screen and (min-width : 992px) {
+
+	}
+
+	/* Large Devices, Wide Screens */
+	@media only screen and (min-width : 1200px) {
+	
+	}
+
+
+	/*==========  Non-Mobile First Method  ==========*/
+
+	/* Large Devices, Wide Screens */
+	@media only screen and (max-width : 1200px) {
+		.big_slider .auth_meta{display: none !important;}
+		.contant_item_big_slider{margin: 0 !important;}
+		.big_slider .owl-theme .owl-controls{margin-top: -40px !important;}
+		.img_item_big_slider, .meta_item_big_slider{max-height: 400px !important;min-height: 400px !important;}
+		.widget_search input.button{margin-top: 10px !important;}
+		.ads_wid img{width: 100% !important;}
+		.img_item_list_post{width: 100% !important;}
+		.meta_item_list_post{width: 100% !important;}
+		.col-md-12 .img_item_list_post{width: 50% !important;}
+		.col-md-12 .meta_item_list_post{width: 50% !important;}
+		.img_item_list_post img{width: 100% !important;height: auto !important;}
+		.img_item_list_post{max-height: inherit !important;min-height: inherit !important;height: inherit !important; }
+		.layout_grid .col-md-12 .blog_post{width: 31.8% !important;}
+		.layout_grid .col-md-8 .blog_post{width: 48% !important;}
+	}
+
+
+	/* Medium Devices, Desktops */
+	@media only screen and (max-width : 992px) {
+		.big_slider .auth_meta{display: inline-block !important;}
+		.img_item_big_slider, .meta_item_big_slider{max-height: 470px !important;min-height: 470px !important;}
+		.contant_item_big_slider{margin: 30px 0 20px !important;}
+		.big_slider .owl-theme .owl-controls{margin-top: 20px !important;}
+		.big_slider {margin: 20px 20px !important;}
+		.inner_meta_item_big_slider{max-height: 310px !important;min-height: 310px !important;}
+		.nav_one{display: none !important;}
+		.mobile_menu_button{display: inline-block !important;}
+		.big_slider li .inner_over_sami{padding: 20px !important;}
+		.inner_over_sami .title_slider h5{font-size: 17px;}
+		.hamzh_flickr{width: 100%;}
+		.ads_wid img{width: auto !important;}
+		.blog_widget_top_area .blog_widget_area_wrap {margin-bottom: 20px;}
+		.blog_widget_top_area .blog_widget_area_wrap:last-child{margin-bottom: 0px;}
+		.col-md-12 .img_item_list_post{width: 100% !important;}
+		.col-md-12 .meta_item_list_post{width: 100% !important;}
+		.layout_grid .col-md-12 .blog_post{width: 48.5% !important;}
+		.layout_grid .col-md-8 .blog_post{width: 48.5% !important;}
+
+	}
+
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : 768px) {
+		.site_footer .widget {margin-bottom: 30px !important;}
+		.inner_meta_item_big_slider {max-height: 370px !important;min-height: 370px !important;}
+		.auth_cont{float: none !important;margin-bottom: 10px;}
+		.layout_grid .col-md-12 .blog_post{width: 100% !important;}
+		.layout_grid .col-md-8 .blog_post{width: 100% !important;}
+		.author_bio{display: inline-block !important;}
+		.commentlist ul.children{padding-left: 0px !important;}
+		.share_article .tagcloud{margin-bottom: 15px !important;}
+	}
+
+	/* Extra Small Devices, Phones */ 
+	@media only screen and (max-width : 480px) {
+		.inner_meta_item_big_slider {max-height: 400px !important;min-height: 400px !important;}
+	}
+
+	/* Custom, iPhone Retina */ 
+	@media only screen and (max-width : 320px) {
+
+	}
+
+	/*==========  ***  ==========*/
+
+
+
+
+	/*Desktops */
+	@media screen and (min-width: 1024px) {
+
+	}
+
+	/* Large Devices, Wide Screens */
+	@media screen and (max-width: 1023px) and (min-width: 720px) {
+
+	}
+
+
+	/* Medium Devices, Desktops */
+	@media only screen and (max-width : 992px) {
+		.img_item_big_slider, .meta_item_big_slider{min-height: inherit !important;}
+	}
+
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : 768px) {
+		.nav_one{display: none !important;}
+		.mobile_menu_button{display: inline-block !important;}
+		.big_slider li .inner_over_sami{padding: 20px !important;}
+		.inner_over_sami .title_slider h5{font-size: 17px;}
+	}
+
+	/* Extra Small Devices, Phones */ 
+	@media only screen and (max-width : 480px) {
+		
+	}
+
+	/* Custom, iPhone Retina */ 
+	@media only screen and (max-width : 320px) {
+	
+	}
+
+
+
+
